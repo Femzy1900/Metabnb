@@ -1,0 +1,14 @@
+.social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.social__wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.social__icon{
+    height: 1.5rem;
+}

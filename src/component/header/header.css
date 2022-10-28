@@ -1,0 +1,34 @@
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 30rem;
+}
+
+.share_link{
+    border: 1px dashed #D0D5DD;
+    border-radius: 20px;
+}
+
+.mob_share{
+    display: none;
+}
+
+
+@media screen and (max-width: 56.5em){
+    .header{
+        height: 10vh;
+        padding: 0 1rem;
+    }
+
+    .mob_share{
+        display: block;
+        width: 42px;
+        height: 42px;
+        border-radius: 20px;
+    }
+    .share__link{
+        display: none;
+    }
+}
