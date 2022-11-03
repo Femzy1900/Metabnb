@@ -1,18 +1,18 @@
-import Footer from "./component/Footer";
-import Header from "./component/header";
-import Links from "./component/Links";
-import Social from "./component/Social";
-import User from './component/User'
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <User/>
-      <Links/>
-      <Social/>
-      <Footer/>
-    </div>
+
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
+    </Router>
+  
   );
 }
 
