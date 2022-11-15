@@ -1,8 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Red+Rose:wght@300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
-  background: #ffffff;
-  padding: 5%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  color: #434343;
+  font-family: "Red Rose", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+.show {
+  transform: translate3d(0, 0, 0) !important;
+}
+.header-side-menu {
+  transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
+  transform: translate3d(100%, 0, 0);
+}
+.header-side-link {
+  margin-top: 15px;
+  padding: 5px;
+}
+.content {
+  @apply px-6 lg:px-24;
+}
+

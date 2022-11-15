@@ -1,18 +1,17 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PageWrapper from './components/wrapper/PageWrapper';
+import Homepage from './pages/Homepage';
+import PlaceToStay from './pages/PlaceToStay';
 
 function App() {
   return (
-
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/contact" component={Contact} />
-      </Switch>
-    </Router>
-  
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<PageWrapper><Homepage /></PageWrapper>} />
+        <Route path="/place-to-stay" exact element={<PageWrapper><PlaceToStay /></PageWrapper>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
